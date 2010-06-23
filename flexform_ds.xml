@@ -1,0 +1,262 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<templateFile>
+						<TCEforms>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.template_file</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<default></default>
+								<wizards type="array">
+									<_PADDING>2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>Link</title>
+										<icon>link_popup.gif</icon>
+										<script>browse_links.php?mode=wizard&amp;act=file</script>
+										<params type="array">
+											<blindLinkOptions>page,url,mail,spec</blindLinkOptions>
+											<allowedExtensions>htm,html,tmpl,tpl</allowedExtensions>
+										</params>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</templateFile>
+					<displayMode>
+						<TCEforms>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.display_mode</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.display_mode.list</numIndex>
+										<numIndex index="1">LIST</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.display_mode.single</numIndex>
+										<numIndex index="1">SINGLE</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</displayMode>
+					<recordsSelectionMode>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:LIST</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.records_selection_mode</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.records_selection_mode.directory</numIndex>
+										<numIndex index="1">DIRECTORY</numIndex>
+									</numIndex>
+									<!--<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.records_selection_mode.records</numIndex>
+										<numIndex index="1">RECORDS</numIndex>
+									</numIndex>-->								
+								</items>
+							</config>
+						</TCEforms>
+					</recordsSelectionMode>
+					<startingpointDirectory>
+						<TCEforms>
+							<displayCond>FIELD:recordsSelectionMode:IN:DIRECTORY</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.startingpoint_directory</label>				
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<default></default>
+								<wizards type="array">
+									<_PADDING>2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>Link</title>
+										<icon>link_popup.gif</icon>
+										<script>browse_links.php?mode=wizard&amp;act=rep</script>
+										<params type="array">
+											<blindLinkOptions>page,url,mail,spec,file</blindLinkOptions>
+										</params>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</startingpointDirectory>
+					<!--<startingpointRecords>
+						<TCEforms>
+							<displayCond>FIELD:recordsSelectionMode:IN:RECORDS</displayCond>
+							<exclude>1</exclude>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.startingpoint_records</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>5</size>
+								<maxitems>255</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</startingpointRecords>-->	
+					<recursive>
+						<TCEforms>
+						<displayCond>FIELD:recordsSelectionMode:IN:DIRECTORY</displayCond>
+						<label>LLL:EXT:lang/locallang_general.php:LGL.recursive</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0"></numIndex>
+										<numIndex index="0"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.4</numIndex>
+										<numIndex index="1">4</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.5</numIndex>
+										<numIndex index="1">250</numIndex>
+									</numIndex>
+								</items>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</recursive>
+					<singlePid>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:LIST</displayCond>
+							<exclude>1</exclude>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_general.single_pid</label>				
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</singlePid>
+					<width>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:SINGLE</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</width>
+					<height>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:SINGLE</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</height>
+					<allowSearch>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:SINGLE</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.allow_search</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</allowSearch>
+					<allowFullscreen>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:SINGLE</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.allow_full_screen</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</allowFullscreen>
+					<allowPrint>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:SINGLE</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.allow_print</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</allowPrint>
+					<allowClipboard>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:SINGLE</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.allow_clipboard</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</allowClipboard>
+					<allowPager>
+						<TCEforms>
+							<displayCond>FIELD:displayMode:IN:SINGLE</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.allow_pager</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</allowPager>
+					<zoomType>
+						<TCEforms>	
+							<displayCond>FIELD:displayMode:IN:SINGLE</displayCond>
+							<label>LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.zoom_type</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.zoom_type.1</numIndex>
+										<numIndex index="1">best_fit</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tt_content.pi_flexform.sheet_viewer.zoom_type.2</numIndex>
+										<numIndex index="1">show_all</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</zoomType>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

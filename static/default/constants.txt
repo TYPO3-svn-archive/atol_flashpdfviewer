@@ -1,0 +1,34 @@
+# Constants
+
+plugin.tx_atolflashpdfviewer_pi1 {
+	
+	# cat=atol_flashpdfviewer/file; type=string; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.template_file
+	templateFile = EXT:atol_flashpdfviewer/res/template.html
+	
+	# cat=atol_flashpdfviewer/links; type=int+; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.single_pid
+	singlePid = 
+	
+	# cat=atol_flashpdfviewer/dims; type=string; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.viewer.width
+	viewer.width = 600
+	
+	# cat=atol_flashpdfviewer/dims; type=string; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.viewer.height
+	viewer.height = 800
+	
+	# cat=atol_flashpdfviewer/enable; type=boolean; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.viewer.allow_search
+	viewer.allowSearch = 0
+	
+	# cat=atol_flashpdfviewer/enable; type=boolean; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.viewer.allow_fullscreen
+	viewer.allowFullscreen = 0
+	
+	# cat=atol_flashpdfviewer/enable; type=boolean; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.viewer.allow_print
+	viewer.allowPrint = 0
+	
+	# cat=atol_flashpdfviewer/enable; type=boolean; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.viewer.allow_clipboard
+	viewer.allowClipboard = 0
+	
+	# cat=atol_flashpdfviewer/enable; type=boolean; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.viewer.allow_pager
+	viewer.allowPager = 0
+	
+	# cat=atol_flashpdfviewer/enable; type=options[best_fit,show_all]; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:tsce.viewer.zoom_type
+	viewer.zoomType = 1
+}

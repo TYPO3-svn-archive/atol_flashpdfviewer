@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_atolflashpdfviewer_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<!-- ZViewer -->
+			<label index="zviewer.copy_to_clipboard">Copier</label>
+			<label index="zviewer.clearSearch">Effacer la recherche</label>
+			<label index="zviewer.previousPage">Page précédente</label>
+			<label index="zviewer.nextpPage">Page suivant</label>
+			<label index="zviewer.zoomIn">Agrandir</label>
+			<label index="zviewer.zoomOut">Réduire</label>
+			<label index="zviewer.zoomBestFit">Toute la largeur</label>
+			<label index="zviewer.zoomShowAll">Page entière</label>
+			<label index="zviewer.search">Rechercher</label>
+			<label index="zviewer.fullScreen">Plein écran</label>
+			<label index="zviewer.print">Imprimer</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,5 @@
+	# cat=basic; type=string; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:extmng.pdf2swf_path
+pdf2swfPath = 
+
+	# cat=basic/enable; type=boolean; label=LLL:EXT:atol_flashpdfviewer/locallang_db.xml:extmng.use_dam_links
+useDamLinks = 0

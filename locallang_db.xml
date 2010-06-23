@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'atolflashpdfviewer'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_flashpdfviewer_pdffiles">Fichiers PDF</label>
+			<label index="tx_flashpdfviewer_pdffiles.pdf_name">Nom du fichier</label>
+			<label index="tx_flashpdfviewer_pdffiles.pdf_path">Emplacement du fichier</label>
+			<label index="tx_flashpdfviewer_pdffiles.pdf_hash">Code du hachage</label>
+			
+			<label index="tt_content.list_type_pi1">Visionneuse PDF</label>
+			
+			 <!-- Flexforms -->
+			<label index="tt_content.pi_flexform.sheet_general">Configuration</label>
+			<label index="tt_content.pi_flexform.sheet_general.display_mode">Mode d'affichage</label>
+			<label index="tt_content.pi_flexform.sheet_general.display_mode.list">Espace documentaire</label>
+			<label index="tt_content.pi_flexform.sheet_general.display_mode.single">Visionneuse</label>
+			<label index="tt_content.pi_flexform.sheet_general.records_selection_mode">Mode de sélection des enregistrements</label>
+			<label index="tt_content.pi_flexform.sheet_general.records_selection_mode.directory">Répertoire</label>
+			<label index="tt_content.pi_flexform.sheet_general.records_selection_mode.records">Liste d'enregistrements</label>
+			<label index="tt_content.pi_flexform.sheet_general.records_selection_mode.dam">Enregistrements du DAM</label>
+			<label index="tt_content.pi_flexform.sheet_general.records_selection_mode.damcat">Catégories du DAM</label>
+			<label index="tt_content.pi_flexform.sheet_general.template_file">Référence vers le fichier du gabarit HTML</label>
+			<label index="tt_content.pi_flexform.sheet_general.startingpoint_directory">Chemin du répertoire</label>
+			<label index="tt_content.pi_flexform.sheet_general.startingpoint_records">Liste des enregistrements</label>
+			<label index="tt_content.pi_flexform.sheet_general.startingpoint_dam">Liste des enregistrements du DAM</label>
+			<label index="tt_content.pi_flexform.sheet_general.startingpoint_damcat">Liste des catégories du DAM</label>
+			<label index="tt_content.pi_flexform.sheet_general.single_pid">Page contenant la visionneuse</label>
+			<label index="tt_content.pi_flexform.sheet_viewer">Visionneuse</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.width">Largeur</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.height">Hauteur</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.allow_search">Autoriser la recherche</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.allow_full_screen">Autoriser le mode plein écran</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.allow_print">Autoriser l'impression</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.allow_clipboard">Autoriser la copie dans le presse papier</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.allow_pager">Autoriser le parcours des pages</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.zoom_type">Type de zoom par défaut</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.zoom_type.1">Page ajustée à la largeur</label>
+			<label index="tt_content.pi_flexform.sheet_viewer.zoom_type.2">Page entière</label>
+			
+			<!-- Extension manager -->
+			<label index="extmng.use_dam_links">Utiliser liens vers le DAM:</label>
+			<label index="extmng.pdf2swf_path">Chemin vers l'executable pdf2swf:</label>
+			
+			<!-- Constant editor -->
+			<label index="tsce.template_file">Fichier template : template HTML utilisé pour afficher l'espace documentaire ou la visionneuse</label>
+			<label index="tsce.single_pid">Page de vue simple: PID de la page sur laquelle la visionneuse sera affichée.</label>
+			<label index="tsce.viewer.width">Largeur de la visionneuse</label>
+			<label index="tsce.viewer.height">Hauteur de la visionneuse</label>
+			<label index="tsce.viewer.allow_search">Autoriser la recherche: Affiche le bouton de recherche</label>
+			<label index="tsce.viewer.allow_fullscreen">Autoriser le mode plein écran: Affiche le bouton pour passer en plein écran</label>
+			<label index="tsce.viewer.allow_print">Autoriser l'impression: Affiche le bouton d'impression</label>
+			<label index="tsce.viewer.allow_clipboard">Autoriser la copie dans le presse papier: Affiche le bouton de copie dans le presse papier du document</label>
+			<label index="tsce.viewer.allow_pager">Autoriser la parcours des pages: Affiche les boutons de navigation, page suivante et pages précédente</label>
+			<label index="tsce.viewer.zoom_type">Type de zoom par défaut: Choix du zoom à l'affichage du document, best_fit : adapté à la largeur de la visionneuse; show_all : affiche le document en entier</label>
+			
+		</languageKey>
+		<languageKey index="fr" type="array">
+
+		</languageKey>
+	</data>
+</T3locallang>

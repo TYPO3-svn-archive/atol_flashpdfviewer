@@ -1,0 +1,18 @@
+# Setup
+
+plugin.tx_atolflashpdfviewer_pi1 {
+	templateFile = {$plugin.tx_atolflashpdfviewer_pi1.templateFile}
+	singlePid = {$plugin.tx_atolflashpdfviewer_pi1.singlePid}
+	
+	viewer {
+		width = {$plugin.tx_atolflashpdfviewer_pi1.viewer.width}
+		height = {$plugin.tx_atolflashpdfviewer_pi1.viewer.height}
+		allowSearch = {$plugin.tx_atolflashpdfviewer_pi1.viewer.allowSearch}
+		allowFullscreen = {$plugin.tx_atolflashpdfviewer_pi1.viewer.allowFullscreen}
+		allowPrint = {$plugin.tx_atolflashpdfviewer_pi1.viewer.allowPrint}
+		allowClipboard = {$plugin.tx_atolflashpdfviewer_pi1.viewer.allowClipboard}
+		allowPager = {$plugin.tx_atolflashpdfviewer_pi1.viewer.allowPager}
+		zoomType = {$plugin.tx_atolflashpdfviewer_pi1.viewer.zoomType}
+	}
+	
+}
